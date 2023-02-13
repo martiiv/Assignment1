@@ -1,6 +1,10 @@
 import pandas as pd #We use pandas for csv file management
-import matplotlib.pyplot as plt #Pyplot for plotting scatterplot
+import matplotlib
+from matplotlib import pyplot as plt #Pyplot for plotting scatterplot
 import numpy as np
+import scipy 
+from sklearn import svm
+
 
 # Task 1.1 
 trainData = pd.read_csv("a1_train.csv",encoding="UTF-8")    #Read from csv 
@@ -15,9 +19,7 @@ plt.scatter(x, y, c=attrClass.map(colors))                  #Plotting the scatte
 
 
 # Task 1.2 
-LDB1 = (15), (20)
-
-ax.plot(LDB1, "-", label= "Linear decision boundary")
+plt.plot([20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]) #Plotting line with coordinates (this is stupid i know :) ) 
 
 
 plt.show()                                              
