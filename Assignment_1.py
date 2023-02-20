@@ -14,12 +14,11 @@ attrClass = trainData["Class"]
 
 colors = {"A":"red", "B":"blue"}                            #We map the colors to the different classtypes from the csv file 
 
-fig, ax = plt.subplots(figsize=(8,8))                             #Defining figure   
+fig, ax = plt.subplots(figsize=(8,8))                       #Defining figure   
 plt.scatter(x, y, c=attrClass.map(colors))                  #Plotting the scatterplot
 
 
-# Task 1.2 
-plt.plot([20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]) #Plotting line with coordinates (this is stupid i know :) ) 
-
+# Task 1.2
+# See a1_task1_2_lines.png
 
 plt.show()                                              
