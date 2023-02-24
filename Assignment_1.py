@@ -14,7 +14,10 @@ attrClass = trainData["Class"]
 
 colors = {"A":"red", "B":"blue"}                            #We map the colors to the different classtypes from the csv file 
 
-fig, ax = plt.subplots(figsize=(8,8))                       #Defining figure   
+fig, ax = plt.subplots(figsize=(8,8))                       #Defining figure and labeling  
+
+plt.xlabel("AttrX")
+plt.ylabel("AttrY")
 plt.scatter(x, y, c=attrClass.map(colors))                  #Plotting the scatterplot
 
 
