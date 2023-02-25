@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.lazy.IBk -- -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     a1_train
+Instances:    20
+Attributes:   3
+              AttrX
+              AttrY
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+Attribute mappings:
+
+Model attributes 	    Incoming attributes
+-----------------	    ----------------
+(numeric) AttrX  	--> 1 (numeric) AttrX
+(numeric) AttrY  	--> 2 (numeric) AttrY
+(nominal) Class  	--> 3 (nominal) Class
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           3               75      %
+Incorrectly Classified Instances         1               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.2727
+Root mean squared error                  0.4789
+Relative absolute error                 54.5455 %
+Root relative squared error             95.7787 %
+Total Number of Instances                4     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,500    0,667      1,000    0,800      0,577    0,750     0,667     A
+                 0,500    0,000    1,000      0,500    0,667      0,577    0,750     0,750     B
+Weighted Avg.    0,750    0,250    0,833      0,750    0,733      0,577    0,750     0,708     
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 2 0 | a = A
+ 1 1 | b = B
+

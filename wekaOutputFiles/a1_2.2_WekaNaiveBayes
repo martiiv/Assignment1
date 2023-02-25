@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.bayes.NaiveBayes
+Relation:     a1_train
+Instances:    20
+Attributes:   3
+              AttrX
+              AttrY
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Naive Bayes Classifier
+
+                 Class
+Attribute            A       B
+                 (0.5)   (0.5)
+===============================
+AttrX
+  mean           6.5333 14.6667
+  std. dev.      2.7616  2.3851
+  weight sum         10      10
+  precision      1.3333  1.3333
+
+AttrY
+  mean           4.9778 11.5111
+  std. dev.      2.3897  2.3281
+  weight sum         10      10
+  precision      1.5556  1.5556
+
+
+Attribute mappings:
+
+Model attributes 	    Incoming attributes
+-----------------	    ----------------
+(numeric) AttrX  	--> 1 (numeric) AttrX
+(numeric) AttrY  	--> 2 (numeric) AttrY
+(nominal) Class  	--> 3 (nominal) Class
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           3               75      %
+Incorrectly Classified Instances         1               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.1694
+Root mean squared error                  0.3319
+Relative absolute error                 33.8782 %
+Root relative squared error             66.3802 %
+Total Number of Instances                4     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,500    0,667      1,000    0,800      0,577    1,000     1,000     A
+                 0,500    0,000    1,000      0,500    0,667      0,577    1,000     1,000     B
+Weighted Avg.    0,750    0,250    0,833      0,750    0,733      0,577    1,000     1,000     
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 2 0 | a = A
+ 1 1 | b = B
+
